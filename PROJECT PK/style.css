@@ -300,7 +300,7 @@ section.main-container{
     }
     .about-details .right p{
         text-align: justify;
-    color: white;
+    color: rgb(12, 12, 12);
     }
     section .button{
         outline: none;
@@ -467,4 +467,95 @@ footer .text span a:hover{
         margin: 20px 0;
         width: calc(100% / 2 - 20px);
     }
+}
+
+@media (max-width:900px){
+    .about .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media(max-width:968px){
+    nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+    section .main-container{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,
+    .cancel{
+        opacity: 1;
+        pointer-events: visible;
+    }
+
+    .main-container .content{
+        margin-top: 20px;
+            width: 80%;
+    }
+
+    .social-links{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .main-container .image{
+        z-index: -1;
+        width: 50%;
+            height: 60%;
+    }
+
+    .Skills .Skills-details{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Skills-details .text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .Skills-details .boxes{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .Education .boxes .box{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .Contact .text{
+        width: 100%;
+}
+}
+
+@media (max-width: 500px){
+    main-container .image{
+        width: 50%;
+        height: 60%;
+        margin-bottom: 0px;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .main-container button{
+        margin-top: 15px;
+    }
+
+.Skills-details .boxes .per{
+    font-size: 50px;
+    color: black;
+}
 }
